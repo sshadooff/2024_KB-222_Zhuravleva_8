@@ -15,7 +15,12 @@ public:
     FitnessInctructor(QWidget *parent = nullptr);
     ~FitnessInctructor();
 
-private:
+  private slots:
+    void on_startButton_clicked();
+
+    void on_nextButton_clicked();
+
+  private:
     Ui::FitnessInctructor *ui;
 };
 #endif // FITNESSINCTRUCTOR_H

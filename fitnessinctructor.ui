@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>500</width>
-    <height>651</height>
+    <height>644</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,69 +17,1267 @@
    <string notr="true">background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E6E6FA, stop:1 #F0F8FF);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>460</y>
-      <width>261</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Cambria Math</family>
-      <pointsize>12</pointsize>
-      <weight>50</weight>
-      <italic>false</italic>
-      <bold>false</bold>
-     </font>
-    </property>
-    <property name="mouseTracking">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F0FFF0, stop:1 #F0FFFF); border: 1px solid white; border-radius: 15px}
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QTabWidget" name="startPage">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideLeft</enum>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Начало</string>
+       </attribute>
+       <widget class="QLabel" name="startImg">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>180</y>
+          <width>221</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 0.5px solid white; border-radius: 10px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>461</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Добро пожаловать в &amp;quot;Фитнесс Инструктор&amp;quot;!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Мы поможем вам добиться желаемых результатов! ^_^&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="startButton">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>440</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cambria Math</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F0FFF0, stop:1 #F0FFFF); border: 1px solid white; border-radius: 15px}
 QPushButton:hover { background-color: #F8F8FF }
 QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #F0FFFF)}
 </string>
-    </property>
-    <property name="text">
-     <string>Начать</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>110</y>
-      <width>461</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
-    </property>
-    <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Добро пожаловать в &amp;quot;Фитнесс Инструктор&amp;quot;!&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Мы поможем вам добиться желаемых результатов! ^_^&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="startImg">
-    <property name="geometry">
-     <rect>
-      <x>140</x>
-      <y>200</y>
-      <width>221</width>
-      <height>221</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border: 0.5px solid white; border-radius: 10px</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
+        </property>
+        <property name="text">
+         <string>Начать</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Вопросы</string>
+       </attribute>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>80</y>
+          <width>461</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Пожалуйста, ответьте на несколько вопросов, чтобы&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;мы могли подобрать план тренировки&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>180</y>
+          <width>401</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Ваше имя:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Ваш рост:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_2"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Ваш вес:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_3"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="nextButton">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>440</y>
+          <width>261</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cambria Math</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F0FFF0, stop:1 #F0FFFF); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #F0FFFF)}
+</string>
+        </property>
+        <property name="text">
+         <string>Далее</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Приложение</string>
+       </attribute>
+       <widget class="QTabWidget" name="mainScrean">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-40</y>
+          <width>511</width>
+          <height>641</height>
+         </rect>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::South</enum>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Triangular</enum>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <property name="elideMode">
+         <enum>Qt::ElideNone</enum>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>План</string>
+         </attribute>
+         <widget class="QTabWidget" name="plan">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>40</y>
+            <width>511</width>
+            <height>581</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>План</string>
+           </attribute>
+           <widget class="QLabel" name="label_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>0</y>
+              <width>461</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;7-и дневный план тренировок&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="day2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>130</y>
+              <width>140</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0FFFF, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}</string>
+            </property>
+            <property name="text">
+             <string>День 2</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="day1">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>62</y>
+              <width>140</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0FFFF, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}</string>
+            </property>
+            <property name="text">
+             <string>День 1</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d3Complete">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>196</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Выполнено</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d4Complete">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>262</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Выполнено</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d6Complete">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>394</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Выполнено</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="day5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>328</y>
+              <width>140</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0FFFF, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}</string>
+            </property>
+            <property name="text">
+             <string>День 5</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d1Complete">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>62</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Выполнено</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d2Complete">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>130</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Выполнено</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="day6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>394</y>
+              <width>140</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0FFFF, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}</string>
+            </property>
+            <property name="text">
+             <string>День 6</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d5Complete">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>328</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Выполнено</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="day3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>196</y>
+              <width>140</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0FFFF, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}</string>
+            </property>
+            <property name="text">
+             <string>День 3</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="day7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>460</y>
+              <width>140</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0FFFF, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}</string>
+            </property>
+            <property name="text">
+             <string>День 7</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d7Complete">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>460</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Выполнено</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="day4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>262</y>
+              <width>140</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #E0FFFF, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #F8F8FF, stop:1 #E6E6FA)}</string>
+            </property>
+            <property name="text">
+             <string>День 4</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>1</string>
+           </attribute>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>380</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;День 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="back1">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>75</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d1Click">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>490</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cambria Math</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>2</string>
+           </attribute>
+           <widget class="QPushButton" name="back2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>75</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>380</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;День 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d2Click">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>490</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cambria Math</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_9">
+           <attribute name="title">
+            <string>3</string>
+           </attribute>
+           <widget class="QPushButton" name="back3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>75</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_10">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>380</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;День 3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d3Click">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>490</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cambria Math</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_10">
+           <attribute name="title">
+            <string>4</string>
+           </attribute>
+           <widget class="QPushButton" name="back4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>75</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_11">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>380</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;День 4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d4Click">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>490</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cambria Math</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_11">
+           <attribute name="title">
+            <string>5</string>
+           </attribute>
+           <widget class="QPushButton" name="back5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>75</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_12">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>380</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;День 5&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d5Click">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>490</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cambria Math</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_12">
+           <attribute name="title">
+            <string>6</string>
+           </attribute>
+           <widget class="QLabel" name="label_13">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>380</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;День 6&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="back6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>75</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d6Click">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>490</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cambria Math</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_13">
+           <attribute name="title">
+            <string>7</string>
+           </attribute>
+           <widget class="QLabel" name="label_14">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>0</y>
+              <width>380</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;День 7&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="back7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>0</y>
+              <width>75</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="d7Click">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>490</y>
+              <width>300</width>
+              <height>60</height>
+             </rect>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cambria Math</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA); border: 1px solid white; border-radius: 15px}
+QPushButton:hover { background-color: #F8F8FF }
+QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FFC0CB, stop:1 #E6E6FA)}
+</string>
+            </property>
+            <property name="text">
+             <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Профиль</string>
+         </attribute>
+         <widget class="QToolBox" name="list">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>90</y>
+            <width>441</width>
+            <height>391</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="page">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>441</width>
+             <height>331</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Личные данные</string>
+           </attribute>
+           <widget class="QWidget" name="horizontalLayoutWidget">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>441</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="nameLable">
+               <property name="text">
+                <string>Имя: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="name">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="horizontalLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>60</y>
+              <width>441</width>
+              <height>61</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="heightLable">
+               <property name="text">
+                <string>Рост: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="height">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="horizontalLayoutWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>130</y>
+              <width>441</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <widget class="QLabel" name="weightLable">
+               <property name="text">
+                <string>Вес: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="weight">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="page_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>441</width>
+             <height>331</height>
+            </rect>
+           </property>
+           <attribute name="label">
+            <string>Прогресс</string>
+           </attribute>
+           <widget class="QWidget" name="verticalLayoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>441</width>
+              <height>331</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QCalendarWidget" name="calendarWidget"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Ваш прогресс составляет:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QProgressBar" name="progressBar">
+               <property name="value">
+                <number>24</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
