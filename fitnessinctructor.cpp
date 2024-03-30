@@ -21,14 +21,15 @@ FitnessInctructor::FitnessInctructor(QWidget *parent)
     ui->startPage->setCurrentIndex(0);
     ui->plan->tabBar()->hide();
     ui->plan->setCurrentIndex(0);
+    ui->list->setCurrentIndex(0);
 
-    connect(ui->day1, &QPushButton::clicked, this, [=](){ days_clicked(1); });
-    connect(ui->day2, &QPushButton::clicked, this, [=](){ days_clicked(2); });
-    connect(ui->day3, &QPushButton::clicked, this, [=](){ days_clicked(3); });
-    connect(ui->day4, &QPushButton::clicked, this, [=](){ days_clicked(4); });
-    connect(ui->day5, &QPushButton::clicked, this, [=](){ days_clicked(5); });
-    connect(ui->day6, &QPushButton::clicked, this, [=](){ days_clicked(6); });
-    connect(ui->day7, &QPushButton::clicked, this, [=](){ days_clicked(7); });
+    connect(ui->day1, &QPushButton::clicked, this, [this](){ days_clicked(1); });
+    connect(ui->day2, &QPushButton::clicked, this, [this](){ days_clicked(2); });
+    connect(ui->day3, &QPushButton::clicked, this, [this](){ days_clicked(3); });
+    connect(ui->day4, &QPushButton::clicked, this, [this](){ days_clicked(4); });
+    connect(ui->day5, &QPushButton::clicked, this, [this](){ days_clicked(5); });
+    connect(ui->day6, &QPushButton::clicked, this, [this](){ days_clicked(6); });
+    connect(ui->day7, &QPushButton::clicked, this, [this](){ days_clicked(7); });
 
     connect(ui->back1, &QPushButton::clicked, this, &FitnessInctructor::back_clicked);
     connect(ui->back2, &QPushButton::clicked, this, &FitnessInctructor::back_clicked);
@@ -38,13 +39,13 @@ FitnessInctructor::FitnessInctructor(QWidget *parent)
     connect(ui->back6, &QPushButton::clicked, this, &FitnessInctructor::back_clicked);
     connect(ui->back7, &QPushButton::clicked, this, &FitnessInctructor::back_clicked);
 
-    connect(ui->d1Click, &QPushButton::clicked, this, [=](){ click_complete(ui->d1Click, ui->d1Complete); });
-    connect(ui->d2Click, &QPushButton::clicked, this, [=](){ click_complete(ui->d2Click, ui->d2Complete); });
-    connect(ui->d3Click, &QPushButton::clicked, this, [=](){ click_complete(ui->d3Click, ui->d3Complete); });
-    connect(ui->d4Click, &QPushButton::clicked, this, [=](){ click_complete(ui->d4Click, ui->d4Complete); });
-    connect(ui->d5Click, &QPushButton::clicked, this, [=](){ click_complete(ui->d5Click, ui->d5Complete); });
-    connect(ui->d6Click, &QPushButton::clicked, this, [=](){ click_complete(ui->d6Click, ui->d6Complete); });
-    connect(ui->d7Click, &QPushButton::clicked, this, [=](){ click_complete(ui->d7Click, ui->d7Complete); });
+    connect(ui->d1Click, &QPushButton::clicked, this, [this](){ click_complete(ui->d1Click, ui->d1Complete); });
+    connect(ui->d2Click, &QPushButton::clicked, this, [this](){ click_complete(ui->d2Click, ui->d2Complete); });
+    connect(ui->d3Click, &QPushButton::clicked, this, [this](){ click_complete(ui->d3Click, ui->d3Complete); });
+    connect(ui->d4Click, &QPushButton::clicked, this, [this](){ click_complete(ui->d4Click, ui->d4Complete); });
+    connect(ui->d5Click, &QPushButton::clicked, this, [this](){ click_complete(ui->d5Click, ui->d5Complete); });
+    connect(ui->d6Click, &QPushButton::clicked, this, [this](){ click_complete(ui->d6Click, ui->d6Complete); });
+    connect(ui->d7Click, &QPushButton::clicked, this, [this](){ click_complete(ui->d7Click, ui->d7Complete); });
 }
 
 FitnessInctructor::~FitnessInctructor()

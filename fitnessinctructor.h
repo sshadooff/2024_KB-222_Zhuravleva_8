@@ -17,15 +17,17 @@ public:
     ~FitnessInctructor();
 
 private slots:
-    void on_startButton_clicked();
-
-    void on_nextButton_clicked();
-
     void days_clicked(int dayIndex);
 
     void back_clicked();
 
     void click_complete(QPushButton* completeButton, QPushButton* clickButton);
+
+
+private slots:
+    void on_startButton_clicked();
+
+    void on_nextButton_clicked();
 
     void progress_update();
 

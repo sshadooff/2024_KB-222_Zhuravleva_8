@@ -23,6 +23,9 @@
       <property name="enabled">
        <bool>true</bool>
       </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="tabPosition">
        <enum>QTabWidget::North</enum>
       </property>
@@ -40,6 +43,9 @@
       </property>
       <property name="elideMode">
        <enum>Qt::ElideLeft</enum>
+      </property>
+      <property name="usesScrollButtons">
+       <bool>true</bool>
       </property>
       <property name="documentMode">
        <bool>false</bool>
@@ -240,6 +246,9 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
           <height>641</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
         <property name="tabPosition">
          <enum>QTabWidget::South</enum>
         </property>
@@ -274,8 +283,11 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
             <height>581</height>
            </rect>
           </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="tab_6">
            <attribute name="title">
@@ -656,6 +668,25 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
              <string>Отметить как выполненное</string>
             </property>
            </widget>
+           <widget class="QLabel" name="label_15">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>80</y>
+              <width>411</width>
+              <height>331</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Список упражнений:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Разминка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;2. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Приседания&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Боковые выпады&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;на каждую ногу);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;4. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Ягодичный мост&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_8">
            <attribute name="title">
@@ -730,6 +761,22 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
             </property>
             <property name="text">
              <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_16">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>50</y>
+              <width>411</width>
+              <height>431</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Список упражнений:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Разминка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;2. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Планка на согнутых руках&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 20 сек);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Боковая планка&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 20 сек);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;4. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Отжимания с упором на колени&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 10 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;5. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Скручивания&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;6. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Велосипед&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;на каждую сторону);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;7. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Поднятие ног в положении лежа&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 10 раз).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </widget>
@@ -808,6 +855,22 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
              <string>Отметить как выполненное</string>
             </property>
            </widget>
+           <widget class="QLabel" name="label_17">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>60</y>
+              <width>421</width>
+              <height>431</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Список упражнений:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Разминка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;2. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Приседания с подъемом на носки&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 15 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Пульсирующий выпад на месте&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 15 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;4. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Плие-приседание&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;5. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Планка на прямых руках&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 20 сек);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;6. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Скалолаз&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз на каждую ногу).&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;7. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Лодочка&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 10 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;8. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Растяжка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_10">
            <attribute name="title">
@@ -882,6 +945,22 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
             </property>
             <property name="text">
              <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_18">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>421</width>
+              <height>391</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Сегодня заслуженный отдых.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Но уделите немного времени растяжке.&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Продолжайте в том же духе!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </widget>
@@ -961,6 +1040,22 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
              <string>Отметить как выполненное</string>
             </property>
            </widget>
+           <widget class="QLabel" name="label_19">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>60</y>
+              <width>431</width>
+              <height>431</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Список упражнений:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Разминка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;2. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Планка на согнутых руках&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (3 подхода по 20 сек);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Диагональные выпады&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (3 подхода по 10 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;4. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Приседание + кик ногой в сторону&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 15 раз на каждую ногу);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;5. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Подъемы ног в планке&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (3 подхода по 10 раз&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;на каждую ногу);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;6. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Скручивания&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (3 подхода по 15 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;8. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Растяжка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_12">
            <attribute name="title">
@@ -1035,6 +1130,22 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
             </property>
             <property name="text">
              <string>Отметить как выполненное</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_20">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>60</y>
+              <width>431</width>
+              <height>431</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Список упражнений:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Разминка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;2. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Бабочка - разведение согнутых рук&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (3 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 20 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Сгибание рук + подъемы рук над головой&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(3 подхода по 20 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;4. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Скручивание колено-локоть&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (3 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 20 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;5. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Проходка в полуприседе&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 10 проходок);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;6. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Приседание - свинг&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 20 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;7. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Растяжка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </widget>
@@ -1113,6 +1224,22 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
              <string>Отметить как выполненное</string>
             </property>
            </widget>
+           <widget class="QLabel" name="label_21">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>50</y>
+              <width>431</width>
+              <height>431</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 250, 250, 0.3), stop:1 rgba(248, 248, 255, 0.3)); border-radius: 20px solid white}</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Список упражнений:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;1. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Разминка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;2. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Скручивание с подъемом колен&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (3 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 20 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;3. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Скрестные касания прямых ног&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 20 раз на каждую сторону);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;4. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Шаги из планки в четвереньки&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;по 15 раз на каждую сторону);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;5. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Перекаты на полу&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; (2 подхода по 15 раз);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;6. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Повороты корпуса в планке на локтях&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(2 подхода по 20 раз на каждую сторону);&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;7. &lt;/span&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Растяжка &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;(5-10 мин).&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
           </widget>
          </widget>
         </widget>
@@ -1130,7 +1257,7 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
            </rect>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page">
            <property name="geometry">
@@ -1228,8 +1355,8 @@ QPushButton:pressed { background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>441</width>
-             <height>341</height>
+             <width>100</width>
+             <height>30</height>
             </rect>
            </property>
            <attribute name="label">
